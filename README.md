@@ -1,6 +1,6 @@
- VHDL Study Notes
+# VHDL Study Notes
 
-# Pages Summary
+## Pages Summary
 
 - Getting started!! (This page)
 
@@ -10,13 +10,13 @@
 
 - Writing a Library
 
-# Getting started!
+## Getting started!
 
-## Introduction
+### Introduction
 
 VHDL stands for VHSIC Hardware Description Language. It's a special kind of computer language used to describe and model digital circuits and systems. It was developed in the 1980s by the U.S. government to help people design and verify digital circuits before building them. Nowadays, it's a popular and widely used standard in the field of digital electronics. With VHDL, you can make sure your digital designs will work as intended before you actually build them!
 
-## Making a simple ALU
+### Making a simple ALU
 
 ```vhdl
 -- alu.vhdl
@@ -54,7 +54,7 @@ begin
 end behavioral;
 ```
 
-## Project suggested directory organization
+### Project suggested directory organization
 
 ```bash
 .
@@ -75,7 +75,7 @@ end behavioral;
 
 You can also include a **`scripts`** directory to store scripts to compile and run the simulations, a **`results`** directory to store the simulation outputs, and so on, based on the size and complexity of your project.
 
-## Compile process and its tools
+### Compile process and its tools
 
 ```bash
 ghdl -a <file_name>.vhdl
@@ -159,7 +159,7 @@ begin
 end behavioral;
 ```
 
-## A simple library
+### A simple library
 
 ```vhdl
 -- utils.vhdl
@@ -203,7 +203,7 @@ end function;
 end package body;
 ```
 
-## Simulating and dealing with logs
+### Simulating and dealing with logs
 
 ```makefile
 # Makefile
@@ -246,4 +246,4 @@ clear:
 	rm -rf *.vcd
 ```
 
-## Conclusion
+### Conclusion
